@@ -13,6 +13,8 @@
 This is a starter template for Ionic projects.
 How to use this template
 
+Download the rar file imsc_usc-annie-56d6309e115e
+
 This template does not work on its own. The shared files for each starter are found in the ionic2-app-base repo.
 
 To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the Starter App Base.
