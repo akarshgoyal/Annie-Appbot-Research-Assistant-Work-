@@ -3,9 +3,7 @@
 
 * This is an Appbot Project I am working on in Integrated Media Systems Center Lab (IMSC) in USC.
 
-* I am using frameworks like Ionic, Cordova & AngularJS to make the Mobile app. The app is being used to present the news in interactive manner to the audience.
-
-* In a later phase I will be applying Natural Language Processing and Artificial Intelligence to enable bidirectional chat between user and appbot.
+* I used frameworks like Ionic, Cordova & AngularJS to make the Mobile app. The app is being used to present the news in interactive manner to the audience.
 
 
 

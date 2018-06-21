@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      {{x.title}}   
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+            <h2 [innerHTML]="x.title"></h2>
+            <h5>{{x.credits[0].name}}</h5>
+            <img *ngIf="x.promo_images[0].url" src="{{x.promo_images[0].url}}"/>
+            <div text-justify *ngFor = "let i of x.content_elements">
+              <div [innerHTML]= "i.caption"></div>
+              <img *ngIf="i.url" src="{{i.url}}"/>
+              <div [innerHTML]= "i.content"></div>
+            </div>
+</ion-content>

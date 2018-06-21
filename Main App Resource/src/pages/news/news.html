@@ -1,0 +1,40 @@
+<head><meta charset="UTF-8"></head>
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      News
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+ <ion-content padding>
+  <ion-list>
+     <ion-item *ngFor="let x of elem"> 
+    <ion-item-sliding>
+      <ion-item text-wrap>
+        <img src="{{x.promo_items.basic.url}}">   
+
+        <h2>{{x.headlines.basic}}</h2>
+        <br>
+        <div>
+               By {{x.credits.by[0].name}}              
+        </div>      
+            <br>
+         <button ion-button full (click)="viewItem(x)">View</button>
+      </ion-item>   
+      <ion-item-options side="left">
+              <!--<button ion-button>
+                <ion-icon name="book"></ion-icon>  
+              </button>
+              <button color="secondary" ion-button>
+                <ion-icon name="person"></ion-icon>  
+              </button> -->
+              <button color="danger" ion-button (click)="delete(x)">
+                <ion-icon name="close"></ion-icon>  
+              </button>
+      </ion-item-options>
+    
+    </ion-item-sliding>
+    </ion-item>            
+  </ion-list>
+</ion-content>   
